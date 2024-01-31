@@ -6,6 +6,12 @@
 
 :root{
   font-size: 38.5%;
+  /* Tu zmieniasz font size. Najlepiej wygląda jak jest 62.5% chyba.*/
+}
+
+.prices{
+  gap: 1.1rem;
+  /* Tu zmień by zmienić odstęp pomiędzy znakami przy wielkościach kuflów.*/
 }
 
 body{
@@ -43,7 +49,6 @@ p{
 .prices{
   display: flex;
   justify-content: flex-end;
-  gap: 1.1rem;
   padding-right: 10px;
   padding-bottom: 0.8rem;
 }
