@@ -20,9 +20,7 @@ body{
   font-family: Impact, Arial, Helvetica, sans-serif;
   font-weight: 100;
   padding: 0 10px;
-  overflow: hidden;
-  height: 100vh;
-  height: 100svh;
+  min-height: 100svh;
 }
 
 footer{
