@@ -118,9 +118,10 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     function init() {
-        const prices = document.querySelector('.prices');
+
 
         // 
+        // prices.innerHTML = `<p>0.5</p>`
         const leftLogo = document.createElement('img');
         leftLogo.src = '/img/leftLogo.svg';
         leftLogo.alt = 'logo';
@@ -141,8 +142,12 @@ document.addEventListener('DOMContentLoaded', function () {
         document.body.insertBefore(logoContainer, document.body.firstChild);
 
         const beersListSection = document.createElement('section');
+        document.body.innerHTML += "<span class='prices'></span>"
         beersListSection.classList.add('beersList');
         document.body.appendChild(beersListSection);
+
+        const prices = document.querySelector('.prices');
+        prices.innerHTML = '<p>0,5</p><p>/</p><p>0,35</p><p>/</p><p>0,2</p>';
 
         setInterval(() => {
             updateData();
