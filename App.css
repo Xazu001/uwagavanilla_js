@@ -1,0 +1,123 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root{
+  font-size: 38.5%;
+}
+
+body{
+  background-color: #020202;
+  color: #fbf8e6;
+  font-family: Impact, Arial, Helvetica, sans-serif;
+  font-weight: 100;
+  padding: 0 10px;
+  overflow: hidden;
+  height: 100vh;
+  height: 100svh;
+}
+
+footer{
+  position: fixed;
+  font-size: 2.4rem;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+  padding-bottom: 1.2rem;
+}
+
+p{
+  font-size: 4.8rem;
+  letter-spacing: 0.2rem;
+}
+
+.logo{
+  height: 100%;
+  max-height: 12.8rem;
+  max-width: 90%;
+}
+
+.prices{
+  display: flex;
+  justify-content: flex-end;
+  gap: 1.6rem;
+  padding-right: 10px;
+  padding-bottom: 0.8rem;
+}
+
+.prices p{
+  font-size: 2.8rem;
+}
+
+.leftDiv > div > p:nth-child(1){
+  width: 6rem;
+}
+
+.beerItem{
+  border-top: 1px solid #2f2f2f;
+  padding: 0.8rem 1.4rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.leftDiv{
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  padding-right: 2.4rem;
+}
+
+.leftDiv span{
+  display: flex;
+  justify-content: space-between;
+}
+
+.leftDiv span p{
+  font-size: 3rem;
+}
+
+@media  screen and (max-width: 768px) {
+  :root{
+    font-size: 25%;
+  }
+  
+}
+
+
+.leftLogo{
+  height: 100%;
+  max-height: 12.4rem;
+  animation: glow 3.2s infinite alternate-reverse;
+}
+.rightLogo{
+  height: 100%;
+  max-height: 10rem;
+}
+
+
+@keyframes glow {
+  0%{
+    filter: brightness(100%);
+    filter: drop-shadow(-4px 4px 9px rgba(255, 165, 0, 0.83));
+  }
+90%{
+  filter: brightness(115%);
+  filter: drop-shadow(-4px 4px 9px rgba(255, 165, 0, 1));
+}
+95%{
+  filter: brightness(75%);
+  filter: drop-shadow(-4px 4px 9px rgba(255, 165, 0, 0.46));
+}
+97%{
+  filter: brightness(55%);
+  filter: drop-shadow(-4px 4px 9px rgba(255, 165, 0, 0.26));
+}
+
+  100%{
+    filter: brightness(100%);
+    filter: drop-shadow(-4px 4px 9px rgba(255, 165, 0, 0.83));
+  }
+}
